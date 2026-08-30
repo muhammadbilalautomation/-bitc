@@ -1,0 +1,172 @@
+.kgosi-portal {
+    --kgosi-ink: #02060c;
+    --kgosi-panel: #07131f;
+    --kgosi-line: rgba(104, 204, 255, 0.32);
+    --kgosi-blue: #68ccff;
+    --kgosi-white: #f5fbff;
+    --kgosi-muted: #b8cedb;
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    overflow: hidden;
+    background: var(--kgosi-ink);
+    color: var(--kgosi-white);
+    font-family: Arial, Helvetica, sans-serif;
+    isolation: isolate;
+}
+
+.kgosi-portal::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    content: "";
+    background-image: linear-gradient(rgba(104, 204, 255, 0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(104, 204, 255, 0.09) 1px, transparent 1px);
+    background-size: 52px 52px;
+    pointer-events: none;
+}
+
+.kgosi-portal__bar {
+    display: flex;
+    min-height: 74px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--kgosi-line);
+    background: rgba(2, 6, 12, 0.92);
+}
+
+.kgosi-portal__brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.kgosi-portal__mark,
+.kgosi-portal__loading-mark {
+    display: inline-grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid var(--kgosi-blue);
+    color: var(--kgosi-blue);
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.kgosi-portal__brand strong {
+    display: block;
+    color: var(--kgosi-white);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    line-height: 1;
+}
+
+.kgosi-portal__brand small {
+    display: block;
+    margin-top: 6px;
+    color: var(--kgosi-blue);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.kgosi-portal__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--kgosi-muted);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.kgosi-portal__status i {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #75e6a4;
+    box-shadow: 0 0 12px rgba(117, 230, 164, 0.9);
+}
+
+.kgosi-portal__frame-wrap {
+    position: relative;
+    width: 100%;
+    background: #02060c;
+}
+
+.kgosi-portal__frame {
+    display: block;
+    width: 100%;
+    min-height: 520px;
+    border: 0;
+    background: #02060c;
+}
+
+.kgosi-portal__loading {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--kgosi-muted);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    pointer-events: none;
+}
+
+.kgosi-portal__loading.is-hidden {
+    display: none;
+}
+
+.kgosi-portal__empty {
+    display: grid;
+    min-height: 520px;
+    align-content: center;
+    justify-items: center;
+    gap: 12px;
+    padding: 48px 24px 56px;
+    text-align: center;
+}
+
+.kgosi-portal__empty-code {
+    color: var(--kgosi-blue);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+}
+
+.kgosi-portal__empty h2 {
+    max-width: 640px;
+    margin: 0;
+    color: var(--kgosi-white);
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 900;
+    line-height: 1.05;
+}
+
+.kgosi-portal__empty p {
+    max-width: 670px;
+    margin: 0;
+    color: var(--kgosi-muted);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .kgosi-portal__bar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .kgosi-portal__status {
+        font-size: 10px;
+    }
+}

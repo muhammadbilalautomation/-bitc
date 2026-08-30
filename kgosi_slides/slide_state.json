@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "title": "KGOSI: A New Intelligence Layer",
+    "created": 1787828686.559,
+    "last_updated": 1787828862.015,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "slide_1_intro",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "slide_2_capabilities",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "slide_3_workflow",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "slide_4_functions",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "slide_5_data_sources",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "slide_6_scenario",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "slide_7_evidence",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "slide_8_outputs",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "slide_9_safety",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "slide_10_success",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "slide_1_intro",
+      "title": "KGOSI: A New Intelligence Layer",
+      "summary": "Introduction to KGOSI as an autonomous intelligence operating system above existing business applications.",
+      "image_plan": "/home/ubuntu/upload/search_images/LO5qmLFEj7s3.jpg - Introductory slide for KGOSI Enterprise Intelligence and Decision Support, using a futuristic command center/intelligence display."
+    },
+    {
+      "id": "slide_2_capabilities",
+      "title": "What KGOSI Is Designed to Do",
+      "summary": "Overview of core capabilities: understanding commands, reasoning across data, and preparing actions."
+    },
+    {
+      "id": "slide_3_workflow",
+      "title": "The KGOSI Experience",
+      "summary": "Visualizing the end-to-end intelligence workflow from question to verified result."
+    },
+    {
+      "id": "slide_4_functions",
+      "title": "The Three Capabilities in Demo 1",
+      "summary": "Detailed look at executive briefing, BITC copilot, and cross-system investigation."
+    },
+    {
+      "id": "slide_5_data_sources",
+      "title": "The Information Behind the Demo",
+      "summary": "Explanation of public BITC information and synthetic internal enterprise data sources.",
+      "image_plan": "/home/ubuntu/upload/search_images/1OsT7zizAq8v.jpg - Slide mentioning BITC public information and country-specific context (Botswana map/flag)."
+    },
+    {
+      "id": "slide_6_scenario",
+      "title": "The Signature Demonstration",
+      "summary": "A step-by-step walkthrough of the executive command and investigation scenario."
+    },
+    {
+      "id": "slide_7_evidence",
+      "title": "Explain the Why and Show the Evidence",
+      "summary": "Focus on trust through evidence, analysis, and distinction between facts and recommendations."
+    },
+    {
+      "id": "slide_8_outputs",
+      "title": "Reports, Dashboard and Voice channels",
+      "summary": "Presentation of various output formats including dashboard, PDF, Excel, and voice interaction.",
+      "image_plan": "/home/ubuntu/upload/search_images/nPzUOenwTsn6.jpg - Slide on reports, dashboards, and interactive displays, perfectly illustrated by a futuristic data dashboard/command center."
+    },
+    {
+      "id": "slide_9_safety",
+      "title": "Controlled Actions and Human Approval",
+      "summary": "Safety framework showing different levels of autonomy and mandatory human approval gates."
+    },
+    {
+      "id": "slide_10_success",
+      "title": "How We Build It and Success Metrics",
+      "summary": "Technical architecture overview and the final definition of a successful demo."
+    }
+  ]
+}

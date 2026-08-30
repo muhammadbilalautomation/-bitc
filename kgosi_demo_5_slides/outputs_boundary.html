@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What the Client Receives in Demo 1</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #02060c; color: #ffffff; font-family: Arial, Helvetica, sans-serif; position: relative; padding-top: 1px; margin-top: -1px; }
+    .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(85,185,238,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(85,185,238,.12) 1px, transparent 1px); background-size: 64px 64px; }
+    .header { position: relative; margin: 50px 80px 0; }
+    .kicker { color: #55b9ee; font-size: 18px; letter-spacing: 4px; text-transform: uppercase; font-weight: 900; }
+    h1 { margin: 15px 0 0; font-size: 52px; line-height: 1.05; letter-spacing: -1.5px; font-weight: 900; }
+    .main-grid { position: relative; display: grid; grid-template-columns: 1fr 480px; gap: 40px; margin: 40px 80px 0; }
+    .deliverables { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .item { border-top: 3px solid rgba(85,185,238,.4); padding-top: 12px; }
+    .item h3 { color: #55b9ee; font-size: 22px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 900; }
+    .item p { color: #ffffff; font-size: 18px; line-height: 1.4; font-weight: 700; margin: 0; }
+    .map-side { position: relative; }
+    .map-image { width: 480px; height: 320px; object-fit: contain; border: 2px solid rgba(85,185,238,.3); background: #08121d; }
+    .next-steps { margin-top: 20px; }
+    .next-steps h4 { color: #ffffff; font-size: 22px; margin-bottom: 12px; border-left: 5px solid #55b9ee; padding-left: 15px; font-weight: 900; }
+    .next-steps ul { list-style: none; padding: 0; margin: 0; }
+    .next-steps li { color: #d9e8f1; font-size: 17px; margin-bottom: 8px; padding-left: 24px; position: relative; font-weight: 700; }
+    .next-steps li::before { content: "→"; position: absolute; left: 0; color: #55b9ee; font-weight: 900; }
+    .footer { position: absolute; left: 80px; bottom: 30px; color: #55b9ee; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 900; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="grid"></div>
+    <div class="header">
+      <div class="kicker">05 / Deliverables &amp; Next Steps</div>
+      <h1>A complete proof of concept for Demo 1.</h1>
+    </div>
+    <div class="main-grid">
+      <div class="deliverables">
+        <div class="item">
+          <h3>Live Dashboard</h3>
+          <p>Interactive command centre showing organisation-wide performance, risks, and activities.</p>
+        </div>
+        <div class="item">
+          <h3>Executive Reports</h3>
+          <p>Automated generation of briefing notes, financial summaries, and operational status.</p>
+        </div>
+        <div class="item">
+          <h3>Document Exports</h3>
+          <p>One-click export to professional PDF and Excel formats for board meetings and sharing.</p>
+        </div>
+        <div class="item">
+          <h3>Approval Portal</h3>
+          <p>A dedicated interface for humans to review, edit, and approve JARVIS-prepared actions.</p>
+        </div>
+      </div>
+      <div class="map-side">
+        <img class="map-image" src="/home/ubuntu/upload/search_images/1OsT7zizAq8v.jpg" alt="Botswana Map and Context" />
+        <div class="next-steps">
+          <h4>The Path to Production</h4>
+          <ul>
+            <li>Connect live Accounting, ERP, and CRM APIs</li>
+            <li>Integrate secure internal document repositories</li>
+            <li>Configure real-time GIS project location tracking</li>
+            <li>Deploy on dedicated, 24/7 secure enterprise hosting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">Phase 1: Foundation · Phase 2: Integration</div>
+  </div>
+</body>
+</html>

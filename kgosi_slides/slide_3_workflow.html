@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #E0F2FE;
+            color: #09090B;
+            font-family: sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+        .left-rule {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            bottom: 60px;
+            width: 8px;
+            background: #0284C7;
+        }
+        .content {
+            margin-left: 80px;
+            padding-right: 80px;
+        }
+        .upper-third {
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        h1 {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 28px;
+            font-weight: 500;
+            color: #0284C7;
+            text-transform: uppercase;
+        }
+        .workflow-container {
+            margin-top: 40px;
+            width: 1100px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        .step {
+            background: #09090B;
+            color: #E0F2FE;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: 2px solid #0284C7;
+        }
+        .arrow {
+            color: #0284C7;
+            font-size: 24px;
+        }
+        .example-box {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #09090B;
+            font-size: 24px;
+            font-weight: 500;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-rule"></div>
+        <div class="content">
+            <div class="upper-third">
+                <h1>WORKFLOW</h1>
+                <div class="subtitle">From Question to Verified Result</div>
+            </div>
+            <div class="workflow-container">
+                <div class="step">Ask</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Understand</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Investigate</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Reason</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Explain</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Recommend</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Prepare</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Approve</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Execute</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Verify</div>
+                <div class="arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">Report</div>
+            </div>
+            <div class="example-box">
+                "KGOSI, what is happening in the organisation?" — KGOSI investigates, identifies matters, explains evidence, and recommends actions.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

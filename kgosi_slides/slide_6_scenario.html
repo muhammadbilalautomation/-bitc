@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #E0F2FE;
+            color: #09090B;
+            font-family: sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+        .left-rule {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            bottom: 60px;
+            width: 8px;
+            background: #0284C7;
+        }
+        .content {
+            margin-left: 80px;
+            padding-right: 80px;
+        }
+        .upper-third {
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        h1 {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 28px;
+            font-weight: 500;
+            color: #0284C7;
+            text-transform: uppercase;
+        }
+        .scenario-flow {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .dialogue-row {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .label {
+            font-size: 18px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #0284C7;
+            width: 120px;
+            padding-top: 5px;
+        }
+        .bubble {
+            background: #09090B;
+            color: #E0F2FE;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: 500;
+            flex: 1;
+            border: 2px solid #0284C7;
+        }
+        .bubble.executive {
+            background: transparent;
+            color: #09090B;
+            border: 2px solid #09090B;
+        }
+        .status-list {
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+        .status-item {
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .status-item.red { color: #dc2626; }
+        .status-item.yellow { color: #d97706; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-rule"></div>
+        <div class="content">
+            <div class="upper-third">
+                <h1>SCENARIO</h1>
+                <div class="subtitle">The Signature Demonstration</div>
+            </div>
+            <div class="scenario-flow">
+                <div class="dialogue-row">
+                    <div class="label">Executive</div>
+                    <div class="bubble executive">"KGOSI, what is happening in the organisation?"</div>
+                </div>
+                <div class="dialogue-row">
+                    <div class="label">KGOSI</div>
+                    <div class="bubble">
+                        "There are four matters requiring your attention today."
+                        <div class="status-list">
+                            <div class="status-item red"><i class="fas fa-circle"></i> Cash-flow Risk</div>
+                            <div class="status-item red"><i class="fas fa-circle"></i> Project Alpha Delay</div>
+                            <div class="status-item yellow"><i class="fas fa-circle"></i> 5 Overdue Customers</div>
+                            <div class="status-item yellow"><i class="fas fa-circle"></i> Pending Approvals</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialogue-row">
+                    <div class="label">Executive</div>
+                    <div class="bubble executive">"Why is cash flow at risk? Investigate that."</div>
+                </div>
+                <div class="dialogue-row">
+                    <div class="label">KGOSI</div>
+                    <div class="bubble">
+                        "Investigation complete. The primary cause is BWP 2.1M in receivables over 90 days. Additionally, Project Alpha is consuming cash faster than planned due to procurement delays."
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

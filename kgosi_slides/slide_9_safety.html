@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #E0F2FE;
+            color: #09090B;
+            font-family: sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+        .left-rule {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            bottom: 60px;
+            width: 8px;
+            background: #0284C7;
+        }
+        .content {
+            margin-left: 80px;
+            padding-right: 80px;
+        }
+        .upper-third {
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        h1 {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 28px;
+            font-weight: 500;
+            color: #0284C7;
+            text-transform: uppercase;
+        }
+        .safety-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+        .safety-table th {
+            background: #09090B;
+            color: #E0F2FE;
+            text-align: left;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: 2px solid #09090B;
+        }
+        .safety-table td {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            border: 2px solid #09090B;
+            vertical-align: top;
+        }
+        .risk-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .risk-low { background: #dcfce7; color: #166534; }
+        .risk-med { background: #fef9c3; color: #854d0e; }
+        .risk-high { background: #fee2e2; color: #991b1b; }
+        .icon-cell { text-align: center; width: 100px; }
+        .icon-cell i { font-size: 24px; }
+        .footer-note {
+            margin-top: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0284C7;
+            border-top: 2px solid #09090B;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-rule"></div>
+        <div class="content">
+            <div class="upper-third">
+                <h1>SAFETY</h1>
+                <div class="subtitle">Controlled Actions and Human Approval</div>
+            </div>
+            <table class="safety-table">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Capability</th>
+                        <th>Approval</th>
+                        <th>Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>0 - Read</strong></td>
+                        <td>Retrieve & Explain</td>
+                        <td><span class="risk-tag risk-low">None</span></td>
+                        <td>View invoices, search documents, generate reports.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1 - Recommend</strong></td>
+                        <td>Analyse & Advise</td>
+                        <td><span class="risk-tag risk-low">None</span></td>
+                        <td>Suggest cost reductions, identify project risks.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2 - Prepare</strong></td>
+                        <td>Draft Actions</td>
+                        <td><span class="risk-tag risk-med">Internal</span></td>
+                        <td>Draft emails, prepare purchase requisitions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3 - Execute</strong></td>
+                        <td>Controlled Action</td>
+                        <td><span class="risk-tag risk-high">Mandatory</span></td>
+                        <td>Send external mail, approve payments, post journals.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="footer-note">
+                <i class="fas fa-shield-alt"></i> The AI permission model is machine-enforced. KGOSI never executes sensitive financial or legal actions without authorised human approval.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

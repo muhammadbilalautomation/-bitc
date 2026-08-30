@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #E0F2FE;
+            color: #09090B;
+            font-family: sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+        .left-rule {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            bottom: 60px;
+            width: 8px;
+            background: #0284C7;
+        }
+        .content {
+            margin-left: 80px;
+            padding-right: 80px;
+        }
+        .upper-third {
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        h1 {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 28px;
+            font-weight: 500;
+            color: #0284C7;
+            text-transform: uppercase;
+        }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 4px solid #09090B;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .arch-step {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .arch-step i { color: #0284C7; }
+        .success-metric {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 1.4;
+            background: #09090B;
+            color: #E0F2FE;
+            padding: 25px;
+            border: 2px solid #0284C7;
+        }
+        .next-step {
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: 900;
+            color: #0284C7;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-rule"></div>
+        <div class="content">
+            <div class="upper-third">
+                <h1>SUCCESS</h1>
+                <div class="subtitle">How We Build It and Success Metrics</div>
+            </div>
+            <div class="main-grid">
+                <div class="column">
+                    <div class="section-title">Technical Architecture</div>
+                    <div class="arch-step"><i class="fas fa-terminal"></i> KGOSI Interface (Voice/Text)</div>
+                    <div class="arch-step"><i class="fas fa-microchip"></i> Master Orchestrator</div>
+                    <div class="arch-step"><i class="fas fa-robot"></i> Specialist Agents & Tools</div>
+                    <div class="arch-step"><i class="fas fa-network-wired"></i> Integration Layer</div>
+                    <div class="arch-step"><i class="fas fa-database"></i> Data Sources (SQL/Vector/Graph)</div>
+                </div>
+                <div class="column">
+                    <div class="section-title">Definition of Success</div>
+                    <div class="success-metric">
+                        Success is when an executive can naturally ask: "What is happening?" → "Why?" → "Investigate." → "What do you recommend?" → "Prepare the actions."
+                    </div>
+                    <div class="next-step">
+                        Next Step: Confirm Demo Data & Scenarios
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

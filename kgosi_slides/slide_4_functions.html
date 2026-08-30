@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #E0F2FE;
+            color: #09090B;
+            font-family: sans-serif;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+        }
+        .left-rule {
+            position: absolute;
+            left: 40px;
+            top: 60px;
+            bottom: 60px;
+            width: 8px;
+            background: #0284C7;
+        }
+        .content {
+            margin-left: 80px;
+            padding-right: 80px;
+        }
+        .upper-third {
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        h1 {
+            font-size: 120px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 28px;
+            font-weight: 500;
+            color: #0284C7;
+            text-transform: uppercase;
+        }
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .column {
+            border-top: 4px solid #09090B;
+            padding-top: 20px;
+        }
+        .column i {
+            font-size: 40px;
+            color: #0284C7;
+            margin-bottom: 20px;
+        }
+        .column-title {
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .column-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="left-rule"></div>
+        <div class="content">
+            <div class="upper-third">
+                <h1>CORE FUNCTIONS</h1>
+                <div class="subtitle">The Three Capabilities in Demo 1</div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="column-title">Executive Intelligence</div>
+                    <div class="column-text">
+                        A comprehensive briefing on finance, revenue, projects, procurement, and risks. KGOSI identifies the most important matters requiring immediate attention.
+                    </div>
+                </div>
+                <div class="column">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="column-title">BITC Copilot</div>
+                    <div class="column-text">
+                        Expert guidance on investment, export, and registration using BITC public information. Every answer is grounded in verified external sources.
+                    </div>
+                </div>
+                <div class="column">
+                    <i class="fas fa-search-plus"></i>
+                    <div class="column-title">Cross-System Investigation</div>
+                    <div class="column-text">
+                        The ability to reason across multiple systems (Accounting, CRM, ERP) to find the root cause of business problems like cash-flow pressure.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What the Demo Will Demonstrate</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; }
+.slide-container { width: 1280px; min-height: 720px; background: #02060c; color: #ffffff; font-family: Arial, Helvetica, sans-serif; position: relative; padding-top: 1px; margin-top: -1px; }
+.grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(85,185,238,.12) 1px, transparent 1px), linear-gradient(90deg, rgba(85,185,238,.12) 1px, transparent 1px); background-size: 60px 60px; }
+.content { position: relative; display: grid; grid-template-columns: 400px 1fr; gap: 60px; margin: 65px 80px 0; }
+.kicker { color: #55b9ee; font-size: 18px; letter-spacing: 4px; text-transform: uppercase; font-weight: 900; text-shadow: 0 0 8px rgba(85,185,238,.3); }
+h1 { font-size: 52px; line-height: 1.02; margin: 24px 0 22px; letter-spacing: -1.5px; max-width: 380px; font-weight: 900; }
+.lead { color: #ffffff; font-size: 24px; line-height: 1.3; max-width: 360px; margin: 0; font-weight: 800; }
+.big-no { font-size: 140px; line-height: .8; font-weight: 900; color: rgba(85,185,238,.22); margin-top: 60px; }
+.right { padding-top: 4px; }
+.row { display: grid; grid-template-columns: 65px 280px 1fr; gap: 24px; align-items: start; min-height: 100px; padding: 18px 0; border-bottom: 2px solid rgba(85,185,238,.3); }
+.row:first-child { border-top: 2px solid rgba(85,185,238,.3); }
+.num { color: #55b9ee; font-size: 24px; font-weight: 900; }
+.name { color: #ffffff; font-size: 26px; font-weight: 900; }
+.desc { color: #d9e8f1; font-size: 18px; line-height: 1.35; font-weight: 700; }
+.footer { position: absolute; right: 80px; bottom: 34px; color: #55b9ee; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; font-weight: 900; }
+</style>
+</head>
+<body>
+<div class="slide-container">
+  <div class="grid"></div>
+  <div class="content">
+    <div>
+      <div class="kicker">01 / Demo Scope</div>
+      <h1>Five capabilities prove the core idea.</h1>
+      <p class="lead">JARVIS turns a leader’s question into an informed, explainable next step.</p>
+      <div class="big-no">05</div>
+    </div>
+    <div class="right">
+      <div class="row"><div class="num">01</div><div class="name">Understand commands</div><div class="desc">Receive a voice or text instruction and identify what the leader needs.</div></div>
+      <div class="row"><div class="num">02</div><div class="name">Brief the organisation</div><div class="desc">Summarise finance, operations, projects, activities, risks and decisions.</div></div>
+      <div class="row"><div class="num">03</div><div class="name">Analyse performance</div><div class="desc">Explain income, costs, cash flow, profit or loss and performance trends.</div></div>
+      <div class="row"><div class="num">04</div><div class="name">Find risks and causes</div><div class="desc">Connect related information to show what is happening and why.</div></div>
+      <div class="row"><div class="num">05</div><div class="name">Prepare the response</div><div class="desc">Create a dashboard, report, recommendation and approval-ready action.</div></div>
+    </div>
+  </div>
+  <div class="footer">Demo 01 · Focused, explainable, approval-ready</div>
+</div>
+</body>
+</html>

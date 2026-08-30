@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "title": "KGOSI/JARVIS Demo",
+    "created": 1787891473.8,
+    "last_updated": 1787893969.288,
+    "total_slides": 5
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "demo_scope",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "user_experience",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "intelligence_flow",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "outputs_boundary",
+      "state": "edited",
+      "pageNum": 5
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "KGOSI/JARVIS Demo",
+      "summary": "A concise introduction to the enterprise intelligence and decision-support demonstration.",
+      "image_plan": "/home/ubuntu/upload/search_images/LO5qmLFEj7s3.jpg - Introductory slide for KGOSI Enterprise Intelligence and Decision Support, using a futuristic command center/intelligence display."
+    },
+    {
+      "id": "demo_scope",
+      "title": "What the Demo Will Demonstrate",
+      "summary": "The five core capabilities: command understanding, organisation briefing, finance and performance analysis, risk and operations analysis, and report/dashboard generation."
+    },
+    {
+      "id": "user_experience",
+      "title": "How the Leader Will Use JARVIS",
+      "summary": "The login, command-centre dashboard, filters, menu areas, voice/text interaction, evidence, explanations, and recommendations."
+    },
+    {
+      "id": "intelligence_flow",
+      "title": "From Question to Decision Support",
+      "summary": "A practical scenario showing how JARVIS connects information, explains the situation, recommends actions, and prepares approval-ready work."
+    },
+    {
+      "id": "outputs_boundary",
+      "title": "What the Client Receives in Demo 1",
+      "summary": "The dashboard, reports, exports, approval flow, custom backend and demo boundary, plus what comes next for live integrations.",
+      "image_plan": "/home/ubuntu/upload/search_images/1OsT7zizAq8v.jpg - Slide mentioning BITC public information and country-specific context (Botswana map/flag)."
+    }
+  ]
+}
