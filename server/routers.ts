@@ -4,9 +4,11 @@ import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
 import { z } from "zod";
 import { searchPublicProspects } from "./serpApi";
-import { chatWithThabo, generateGeminiDraft, summarizeGeminiResearch, understandGeminiCommand } from "./gemini";
+import { generateGeminiDraft, summarizeGeminiResearch, understandGeminiCommand } from "./gemini";
 import { getChatConversationForUser, listChatConversationsForUser, saveChatConversationForUser } from "./db";
 import { createLiveAvatarSession } from "./liveavatar";
+import { answerFromKnowledgeBase, THABO_KNOWLEDGE_SOURCE } from "./knowledgeBase";
+import { runThaboAction, THABO_ACTIONS } from "./actionGateway";
 
 export const appRouter = router({
     // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
@@ -37,7 +39,27 @@ export const appRouter = router({
       .input(z.object({
         messages: z.array(z.object({ role: z.enum(["user", "assistant"]), content: z.string().min(1).max(4000) })).min(1).max(10),
       }))
-      .mutation(({ input }) => chatWithThabo(input.messages)),
+      .mutation(({ input }) => answerFromKnowledgeBase(input.messages)),
+  }),
+  knowledge: router({
+    source: publicProcedure.query(() => THABO_KNOWLEDGE_SOURCE),
+    ask: publicProcedure
+      .input(z.object({
+        messages: z.array(z.object({ role: z.enum(["user", "assistant"]), content: z.string().min(1).max(4000) })).min(1).max(10),
+      }))
+      .mutation(({ input }) => answerFromKnowledgeBase(input.messages)),
+  }),
+  actions: router({
+    execute: publicProcedure
+      .input(z.object({
+        action: z.enum(THABO_ACTIONS),
+        userMessage: z.string().trim().min(1).max(4000),
+        parameters: z.record(z.string(), z.unknown()).optional(),
+        approved: z.boolean().optional(),
+        conversationId: z.string().max(160).optional(),
+        userId: z.string().max(160).optional(),
+      }))
+      .mutation(({ input }) => runThaboAction(input)),
   }),
   research: router({
     search: publicProcedure
@@ -82,3 +104,4 @@ export const appRouter = router({
 });
 
 export type AppRouter = typeof appRouter;
+
